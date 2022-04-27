@@ -72,14 +72,14 @@ public class swap
 				System.out.println("NO");
 				i++;
 			}
-			
+	
 			
 //			  scr.close();  	
 	     	 System.out.println("Try");
 		}
 		catch(Exception e)
 		{
-			System.out.println("Error: "+e);
+			System.out.println("Error:  iubbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"+e);
 		}     	 
 		
 	}
