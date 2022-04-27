@@ -23,9 +23,7 @@ public class chap2
 	{
 		full_name = first_name + Last_name;
 	}
-	
-	
-	
+
 		public static void main(String[] args)
 		{
 				chap2 vl = new chap2();
