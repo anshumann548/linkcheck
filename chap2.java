@@ -22,7 +22,6 @@ public class chap2
 	public void name(String first_name, String Last_name)
 	{
 		full_name = first_name + Last_name;
-		//return full_name;
 	}
 	
 	
