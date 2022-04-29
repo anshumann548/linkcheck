@@ -17,7 +17,6 @@ public static void main(String[] args) throws IOException ,InterruptedException
        int n=sc.nextInt();  
    	int[] array = new int[n];  
    	  
-
 	System.out.println("Please enter link you want to check : ");
 	
 	for(int i=0; i<n; i++)
