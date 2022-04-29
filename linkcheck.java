@@ -24,8 +24,6 @@ public static void main(String[] args) throws IOException ,InterruptedException
 		{
 		Scanner scr =new Scanner(System.in);
         url = scr.nextLine();
-	
-	
 	    var request = HttpRequest.newBuilder().GET().uri(URI.create(url)).headers("authorization","Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlkIjoiNmRjZjNjZjMtYWRlMy00OWMyLThiOGUtMzk2MmE1MjM5MTNkIiwiaWF0IjoxNjUxMTI2OTM5LCJleHAiOjE2NTEyOTk3Mzl9.AXfzydVaJQEog2mWhziPHxhX6Qi9HZFkQ1rYFRklN0s").headers("method","GET").headers("accept-encoding", "gzip, deflate, br"
 ).headers("accept","accept: application/json, text/plain, */*").build();
         var client = HttpClient.newBuilder().build();
