@@ -5,7 +5,6 @@ import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
-import org.openqa.selenium.By.ByXPath;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -125,7 +124,9 @@ public class pro {
 		// open
 		// pagination
 		// menu
+		Thread.sleep(2000);
 		testDropDown2.click();
+		Thread.sleep(3000);
 		driver.findElement(By.xpath("//*[@id=\"menu-\"]/div[3]/ul/li[3]")).click(); // To select 25 per page row count
 		Thread.sleep(3000);
 		testDropDown2.click();
@@ -133,15 +134,30 @@ public class pro {
 		driver.findElement(By.xpath("//*[@id=\"menu-\"]/div[3]/ul/li[1]")).click(); // To select 5 per page row count
 		Thread.sleep(2000);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		Thread.sleep(5000);
-driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[1]/div/main/div[2]/div/main/div[2]/main/div/div/div[1]/table/tbody/tr[1]/td[7]/div/div[2]")).click();
-//click on deactivator
-WebElement Deactivatorbox =driver.findElement(By.xpath("/html/body/div[2]/div[3]/div/div[2]/div/main/div[2]/div/div/div/input"));//Box clicker
-Deactivatorbox.click();
-Deactivatorbox.sendKeys("Malicious");
-driver.findElement(By.xpath("/html/body/div[2]/div[3]/div/div[2]/div/main/div[3]/div[1]")).click();
-
-
+		
+		
+		
+		
+		
+		
+		driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[1]/div/main/div[2]/div/main/div[2]/main/div/div/div[1]/table/tbody/tr[7]/td[7]/div/div[1]")).click();
+		//(working on the view button)
+		
+		
+		
+		
+		
+		/*
+		 * driver.findElement(By.xpath(
+		 * "//*[@id=\"root\"]/div/div[1]/div/main/div[2]/div/main/div[2]/main/div/div/div[1]/table/tbody/tr[1]/td[7]/div/div[2]"
+		 * )).click(); //click on deactivator WebElement Deactivatorbox
+		 * =driver.findElement(By.xpath(
+		 * "/html/body/div[2]/div[3]/div/div[2]/div/main/div[2]/div/div/div/input"));//
+		 * Box clicker Deactivatorbox.click(); Deactivatorbox.sendKeys("Malicious");
+		 * //sending keys driver.findElement(By.xpath(
+		 * "/html/body/div[2]/div[3]/div/div[2]/div/main/div[3]/div[1]")).click();
+		 * //clicked on deactivate
+		 */
 try {
 			robot.keyPress(KeyEvent.VK_PAGE_DOWN);
 			robot.keyRelease(KeyEvent.VK_PAGE_DOWN);
@@ -153,8 +169,11 @@ try {
 
 		Thread.sleep(5000);
 
-		driver.findElement(By.xpath("/html/body/div/div/div[1]/div/div/div/ul/div[4]/div[2]/span")).click(); // To open
-																												// questions
+		driver.findElement(By.xpath("/html/body/div/div/div[1]/div/div/div/ul/div[4]/div[2]/span")).click(); // To open questions
+        Thread.sleep(2000);
+		
+		driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[1]/div/main/div[2]/div/main/div/div/div/div/input")).sendKeys("Hello");
+		
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[1]/div/main/div[2]/div/main/div")).click(); // ...........................................//
 		Thread.sleep(2000);
@@ -178,6 +197,11 @@ try {
 		driver.findElement(By.xpath("/html/body/div/div/div[1]/div/div/div/ul/div[5]/div[2]/span")).click(); // to open
 																												// Trending
 																												// Questions
+		driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[1]/div/main/div[2]/div/main/div/div/div/div")).sendKeys("hello");
+		
+		
+		
+		
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[1]/div/main/div[2]/div/main/div")).click(); // ...........................................//
 		Thread.sleep(2000);
