@@ -56,7 +56,5 @@ import org.openqa.selenium.chrome.ChromeDriver;
 		    System.out.println("");      	  
           }		
         	   driver.quit();
-	
-	
-	}
+		}
 }
