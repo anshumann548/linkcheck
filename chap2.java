@@ -1,3 +1,4 @@
+//godd protect the koing
 package ch2;
 
 public class chap2 
